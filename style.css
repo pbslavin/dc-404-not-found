@@ -1,0 +1,57 @@
+body {
+    padding: 5px;
+}
+
+img {
+    max-width: 85%;
+    padding-left: 5%;
+}
+
+article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 15%;
+    margin-bottom: 15%
+}
+
+* { 
+    font-family: Courier New, Courier, monospace;
+}
+
+header {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+p {
+    width: 55%;
+}
+
+button {
+    width: 120px;
+    padding: 14px 0;
+    margin-top: 5%;
+    color: white;
+    background-color: black;
+    border: none;
+    font-size: 9px;
+    font-family: monospace;
+}
+footer {
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {  
+    article {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 1fr;
+    }
+    
+    p {
+        width: 90%;
+    }
+}
